@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <h2>HTML forms tutorial</h2>
+    <form action="backend.php">
+      <!-- Br tag is not recommended to be used -->
+      <label for="Name">Name</label>
+      <div><input type="text" id="Name"/></div>
+      <br />
+      <div>Role:<input type="text" name="myrole" /></div>
+      <br />
+      <div>Email:<input type="email" name="myemail" /></div>
+      <br />
+      <!-- backend has the values which are modified whenever the values of the fields are inserted by the user -->
+      <div>
+        <input type="datetime-local" name="" id="" />
+        <br />
+      </div>
+      <div>
+        Enter the value
+        <input type="number" name="Bonus" id="mybonus" />
+        <br />
+      </div>
+      <div>
+        Are you eligible for the procedure?
+        <input type="checkbox" name="eligibility" id="myeligibility" />
+      </div>
+      <div>
+        Enter the gender
+        <br />
+        <input type="radio" name="type of gender" id="mygender" />
+        Male
+        <input type="radio" name="type of gender" id="mygender" />
+        FeMale
+        <input type="radio" name="type of gender" id="mygender" />
+        other
+      </div>
+      <div>
+        <label for="car"></label>
+        <select name="mycar" id="car"></select>
+        <option value="Rolls royce">Rolls Royce</option>
+        <option value="Tata 407">Tata 407</option>
+        <option value="Mercedes Benz">Mercedes Benz</option>
+        <option value="Range Rover">Range Rover</option>
+      </div>
+      <div>
+        Write about yourself
+        <br />
+        <textarea name="coloumns" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="submit" />
+      </div>
+      <input type="reset" name="Reset now " />
+      <!-- The reset type clears the entire form and whenever the info is submitted the information is stored in the file located at the backend  -->
+    </form>
+  </body>
+</html>
